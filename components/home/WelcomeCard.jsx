@@ -37,9 +37,10 @@
 //   );
 // }
 
-
 // components/WelcomeCard.jsx
 import { imgLine1, imgIonTicket, imgJamAlert } from "@/lib/assets";
+import { IoTicketSharp } from "react-icons/io5";
+import { PiWarningCircle } from "react-icons/pi";
 
 export default function WelcomeCard() {
   return (
@@ -72,9 +73,23 @@ export default function WelcomeCard() {
 
         {/* BUTTONS */}
         <div className="flex flex-col gap-4 sm:gap-[19px] w-full sm:w-auto">
-          <Button red icon={imgIonTicket} label="Book a ticket" />
-          <Button white icon={imgJamAlert} label="Prepare your visit" />
+          <Button
+            red
+            icon={<IoTicketSharp size={20} />}
+            label="Book a ticket"
+          />
+
+          <Button
+            white
+            icon={<PiWarningCircle color="black" size={20}/>}
+            label="Prepare your visit"
+          />
         </div>
+
+        {/* <div className="flex flex-col gap-4 sm:gap-[19px] w-full sm:w-auto">
+          <Button red   icon={<img src="/ticket.svg" className="size-[20px]" alt="ticket" />}label="Book a ticket" />
+          <Button white icon={imgJamAlert} label="Prepare your visit" />
+        </div> */}
       </div>
     </div>
   );
@@ -90,7 +105,8 @@ function Button({ red, white, icon, label }) {
         w-full sm:w-[240px] 2xl:w-[304px]
       `}
     >
-      <img src={icon} className="size-[20px] sm:size-[24px]" alt="" />
+      {/* <img src={icon} className="size-[20px] sm:size-[24px]" alt="" /> */}
+      {icon}
 
       <p
         className={`

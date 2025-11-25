@@ -139,7 +139,7 @@ export default function PlanVisit() {
     <div className="w-full flex flex-col gap-8 mt-8">
       
       {/* HEADING */}
-      <p className="text-[24px] font-semibold text-[#43483f] mb-10">
+      <p className="text-[24px] font-semibold text-[#43483f] ">
         PLAN YOUR VISIT
       </p>
 
@@ -154,63 +154,9 @@ export default function PlanVisit() {
       >
 
         {/* LEFT — ROTATED IMAGE STACK */}
-        <div
-          className="
-            relative 
-            w-full sm:w-[420px] md:w-[500px] xl:w-[620px]
-            h-[240px] sm:h-[340px]  xl:h-[492px]
-            flex justify-center
-            pt-6 sm:pt-10
-          "
-        >
-          {/* CARD 1 */}
-          <img
-            src={imgRectangle18}
-            className="
-              absolute
-              rotate-[330deg]
-              w-[240px] sm:w-[300px] md:w-[330px] xl:w-[383px]
-              h-[150px] sm:h-[180px] md:h-[200px] xl:h-[239px]
-              top-0 sm:top-2 md:top-4 
-              left-1/2 -translate-x-1/2
-
-              xl:top-[80px] xl:left-0 xl:translate-x-0
-              rounded-md shadow-xl
-            "
-          />
-
-          {/* CARD 2 */}
-          <img
-            src={imgRectangle19}
-            className="
-              absolute
-              rotate-[330deg]
-              w-[240px] sm:w-[300px] md:w-[330px] xl:w-[383px]
-              h-[150px] sm:h-[180px] md:h-[200px] xl:h-[239px]
-              top-[20px] sm:top-[25px] md:top-[30px] 
-              left-1/2 -translate-x-1/2
-
-              xl:top-[80px] xl:left-[132px] xl:translate-x-0
-              rounded-md shadow-xl
-            "
-          />
-
-          {/* CARD 3 */}
-          <img
-            src={imgRectangle20}
-            className="
-              absolute
-              rotate-[330deg]
-              w-[240px] sm:w-[300px] md:w-[330px] xl:w-[383px]
-              h-[150px] sm:h-[180px] md:h-[200px] xl:h-[239px]
-              top-[45px] sm:top-[55px] md:top-[60px] 
-              left-1/2 -translate-x-1/2
-
-              xl:top-[80px] xl:left-[298px] xl:translate-x-0
-              rounded-md shadow-xl
-            "
-          />
-        </div>
+    <div>
+      <img src="Frame.png" alt="" />
+    </div>
 
         {/* RIGHT — TEXT */}
         <p

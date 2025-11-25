@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar/>
               <Hero />
 
-      <div className=" w-full h-full  bg-white px-4 md:px-[40px] xl:px-[72px]  ">
+      <div className=" w-full h-full  bg-white pb-[50px] px-4 md:px-[40px] xl:px-[72px]  ">
 
         {/* <Header /> */}
 
