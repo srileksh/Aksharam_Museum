@@ -148,7 +148,7 @@ export default function Footer() {
           <p>Kottayam - 686001.</p>
 
           {/* Email */}
-          <div className="flex items-start  gap-2 mt-4">
+          <div className="flex items-start  gap-1 mt-4">
             <p className="text-2xl"><IoMail /></p>
  
             <p>spcsktm@gmail.com</p>

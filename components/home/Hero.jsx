@@ -1,93 +1,4 @@
-// // components/Hero.jsx
-// import { imgImg202507271809472 } from "@/lib/assets";
-
-// export default function Hero() {
-//   return (
-//     <>
-//       <div className="absolute h-[1072px] left-0 top-[-224px] w-full">
-//         <img
-//           src={imgImg202507271809472}
-//           className="absolute inset-0 w-full h-full object-cover"
-//           alt=""
-//         />
-//       </div>
-
-//       <div className="absolute left-[72px] top-[552px] w-[748px] text-white font-['Inter']">
-//         <p className="text-[96px] font-medium leading-none">AKSHARAM</p>
-//         <p className="text-[24px] leading-normal mt-4">
-//           Discover how language shaped our past and connects our future.
-//           <br />
-//           <br />
-//           Explore the voices that built civilizations.
-//         </p>
-//       </div>
-//     </>
-//   );
-// }
-
-
-
-// components/Hero.jsx
-// import { imgImg202507271809472 } from "@/lib/assets";
-
-// export default function Hero() {
-//   return (
-//     <div className="relative w-full">
-
-//       {/* Background Image */}
-//       <div className="w-full h-[500px] sm:h-[650px] md:h-[800px] lg:h-[1072px] overflow-hidden">
-//         <img
-//           src={imgImg202507271809472}
-//           className="w-full h-full object-cover"
-//           alt="Hero Background"
-//         />
-//       </div>
-
-//       {/* Content */}
-//       <div
-//         className="
-//           absolute top-[40%] left-1/2 
-//           -translate-x-1/2 
-//           md:left-[72px] md:translate-x-0 
-//           md:top-[450px]
-//           lg:top-[552px]
-//           text-white font-['Inter']
-//           px-4 md:px-0
-//           w-full md:w-[748px]
-//         "
-//       >
-//         {/* Title */}
-//         <h1
-//           className="
-//             font-medium leading-none
-//             text-[40px] sm:text-[55px] md:text-[70px] lg:text-[96px]
-//           "
-//         >
-//           AKSHARAM
-//         </h1>
-
-//         {/* Subtitle */}
-//         <p
-//           className="
-//             mt-4
-//             text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px]
-//             leading-relaxed
-//           "
-//         >
-//           Discover how language shaped our past and connects our future.
-//           <br className="hidden sm:block" />
-//           <br className="hidden sm:block" />
-//           Explore the voices that built civilizations.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
 // components/HeroWithWelcomeCard.jsx
-
 import {
   imgImg202507271809472,
   imgLine1,
@@ -98,36 +9,21 @@ import {
 export default function Hero() {
   return (
     <div className="relative w-full">
-
       {/* ===========================
           HERO BACKGROUND
       ============================ */}
-      {/* <div className="w-full h-[500px]  sm:h-[650px] md:h-[800px] lg:h-[728px] overflow-hidden">
-        <div className="w-full h-full bg-[#00000080]">
-              <img
-          src={imgImg202507271809472}
-          className="w-full h-full object-cover"
-          alt="Hero Background"
-        />
-        </div>
-      
-      </div> */}
-
 
       <div className="w-full h-[400px] sm:h-[500px] md:h-[700px] xl:h-[728px] relative overflow-hidden">
+        {/* Background Image */}
+        <img
+          src="/home.png"
+          className="w-full h-full object-cover  absolute inset-0"
+          alt="Hero Background"
+        />
 
-  {/* Background Image */}
-  <img
-    src="/home.png"
-    className="w-full h-full object-cover absolute inset-0"
-    alt="Hero Background"
-  />
-
-  {/* Black Overlay */}
-  <div className="absolute inset-0 bg-[#0000003f]"></div>
-
-</div>
-
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-[#0000003f]"></div>
+      </div>
 
       {/* ===========================
           HERO TEXT CONTENT

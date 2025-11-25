@@ -2,16 +2,11 @@
 import EventsNewsSection from "@/components/home/EventsNewsSection";
 
 // --- LOCAL ASSETS (from your previous Next.js code) ---
-const imgAksharamLogo8X8Cm1 =
-  "/logo.png";
-const imgRectangle3 =
-  "/assets/bdb755f62c915a8dccff0af5a61ffcb1ba904244.png";
-const imgRectangle4 =
-  "/assets/67083be49282f47372d5eb7c4d90d2a8450176d8.png";
-const imgRectangle5 =
-  "/assets/96d67a1b3c93e738758868a04cd06581ea68a3b4.png";
-const imgRectangle6 =
-  "/assets/85d7dfa3b4ba10f32119aea7a0291f5084842561.png";
+const imgAksharamLogo8X8Cm1 = "/logo.png";
+const imgRectangle3 = "/assets/bdb755f62c915a8dccff0af5a61ffcb1ba904244.png";
+const imgRectangle4 = "/assets/67083be49282f47372d5eb7c4d90d2a8450176d8.png";
+const imgRectangle5 = "/assets/96d67a1b3c93e738758868a04cd06581ea68a3b4.png";
+const imgRectangle6 = "/assets/85d7dfa3b4ba10f32119aea7a0291f5084842561.png";
 // 360° virtual tour hero image (served from Figma MCP, like other images)
 // 360° virtual tour hero image
 const imgImg202509301106451 =
@@ -79,7 +74,11 @@ function ConnectWithUs({ className, property1 = "Youtube" }) {
     return (
       <div className={className}>
         <div className="relative shrink-0 size-[24px]">
-          <img alt="" className="block max-w-none size-full" src={imgUilFacebook} />
+          <img
+            alt=""
+            className="block max-w-none size-full"
+            src={imgUilFacebook}
+          />
         </div>
         <p className="font-['Inter',sans-serif] font-normal leading-6 text-[#7e7577] text-[14px]">
           Facebook
@@ -93,7 +92,11 @@ function ConnectWithUs({ className, property1 = "Youtube" }) {
         <div className="overflow-clip relative shrink-0 size-[24px]">
           <div className="absolute inset-[10.42%]">
             <div className="absolute inset-[-3.95%]">
-              <img alt="" className="block max-w-none size-full" src={imgGroup} />
+              <img
+                alt=""
+                className="block max-w-none size-full"
+                src={imgGroup}
+              />
             </div>
           </div>
         </div>
@@ -180,7 +183,11 @@ function ConnectWithUs({ className, property1 = "Youtube" }) {
   return (
     <div className={className}>
       <div className="relative shrink-0 size-[24px]">
-        <img alt="" className="block max-w-none size-full" src={imgUilYoutube} />
+        <img
+          alt=""
+          className="block max-w-none size-full"
+          src={imgUilYoutube}
+        />
       </div>
       <p className="font-['Inter',sans-serif] font-normal leading-6 text-[#7e7577] text-[14px]">
         Youtube
@@ -198,7 +205,10 @@ export default function Home() {
       <div className="relative w-[1440px] min-h-[3800px] bg-white overflow-hidden">
         {/* Background hero image */}
         <div className="absolute h-[1072px] left-0 top-[-224px] w-[1440px]">
-          <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none"
+          >
             <img
               alt=""
               className="absolute max-w-none size-full object-cover"
@@ -256,7 +266,11 @@ export default function Home() {
 
               <div className="flex items-center justify-center gap-2 rounded-[16px] bg-[#ef3e3e] px-4 py-3">
                 <div className="relative size-[24px]">
-                  <img alt="" className="block size-full max-w-none" src={imgIonTicket} />
+                  <img
+                    alt=""
+                    className="block size-full max-w-none"
+                    src={imgIonTicket}
+                  />
                 </div>
                 <p className="font-['Inter',sans-serif] text-[14px] font-medium text-white">
                   BOOK TICKETS
@@ -291,7 +305,11 @@ export default function Home() {
               <div className="flex-none rotate-90">
                 <div className="relative h-0 w-[115px]">
                   <div className="absolute inset-x-0 bottom-0 top-[-2px]">
-                    <img alt="" className="block size-full max-w-none" src={imgLine1} />
+                    <img
+                      alt=""
+                      className="block size-full max-w-none"
+                      src={imgLine1}
+                    />
                   </div>
                 </div>
               </div>
@@ -300,7 +318,11 @@ export default function Home() {
             <div className="flex flex-col gap-[19px]">
               <div className="flex w-[304px] items-center justify-center gap-2 rounded-[16px] bg-[#ef3e3e] px-4 py-3">
                 <div className="relative size-[24px]">
-                  <img alt="" className="block size-full max-w-none" src={imgIonTicket} />
+                  <img
+                    alt=""
+                    className="block size-full max-w-none"
+                    src={imgIonTicket}
+                  />
                 </div>
                 <p className="text-[16px] font-semibold text-white">
                   Book a ticket
@@ -308,7 +330,11 @@ export default function Home() {
               </div>
               <div className="flex w-[304px] items-center justify-center gap-2 rounded-[16px] bg-white px-4 py-3">
                 <div className="relative size-[24px]">
-                  <img alt="" className="block size-full max-w-none" src={imgJamAlert} />
+                  <img
+                    alt=""
+                    className="block size-full max-w-none"
+                    src={imgJamAlert}
+                  />
                 </div>
                 <p className="text-[16px] font-medium text-[#191d17]">
                   Prepare your visit
@@ -318,15 +344,16 @@ export default function Home() {
           </div>
         </div>
 
-
         {/* EVENTS & NEWS – dynamic from API */}
         <EventsNewsSection />
-
 
         {/* 360 VIRTUAL TOUR PANEL */}
         <div className="absolute left-[calc(33.33%+106px)] top-[1025px] h-[528px] w-[782px] overflow-clip rounded-[16px] bg-[#828282]">
           <div className="absolute left-0 top-0 h-[593.25px] w-[791px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none"
+            >
               <img
                 alt=""
                 className="absolute size-full max-w-none object-cover"
@@ -357,7 +384,10 @@ export default function Home() {
         {/* GALLERY GRID (absolute positions matching Figma) */}
         <div className="absolute left-[76px] top-[1611px] h-[634px] w-[1292px]">
           <div className="absolute left-0 top-0 h-[328px] w-[218px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -367,7 +397,10 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute left-[244px] top-[72px] h-[256px] w-[259px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -377,7 +410,10 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute left-[522px] top-0 h-[228px] w-[326px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -387,7 +423,10 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute left-[876px] top-[6px] h-[306px] w-[416px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -397,7 +436,10 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute left-[876px] top-[368px] h-[218px] w-[416px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -407,7 +449,10 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute left-[522px] top-[256px] h-[378px] w-[326px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -417,7 +462,10 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute left-[67px] top-[352px] h-[256px] w-[389px] rounded-[8px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[8px]">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none rounded-[8px]"
+            >
               <div className="absolute inset-0 rounded-[8px] bg-[#d9d9d9]" />
               <img
                 alt=""
@@ -450,20 +498,23 @@ export default function Home() {
               letting you carry home a lasting memory of your visit.
             </p>
             <div className="flex items-center gap-6">
-              {[imgRectangle14, imgRectangle15, imgRectangle16, imgRectangle17].map(
-                (img, idx) => (
-                  <div
-                    key={idx}
-                    className="relative h-[296px] w-[223px] shrink-0 rounded-[8px] border border-solid border-[#73796e]"
-                  >
-                    <img
-                      alt=""
-                      className="absolute inset-0 size-full max-w-none rounded-[8px] object-cover pointer-events-none"
-                      src={img}
-                    />
-                  </div>
-                )
-              )}
+              {[
+                imgRectangle14,
+                imgRectangle15,
+                imgRectangle16,
+                imgRectangle17,
+              ].map((img, idx) => (
+                <div
+                  key={idx}
+                  className="relative h-[296px] w-[223px] shrink-0 rounded-[8px] border border-solid border-[#73796e]"
+                >
+                  <img
+                    alt=""
+                    className="absolute inset-0 size-full max-w-none rounded-[8px] object-cover pointer-events-none"
+                    src={img}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -544,8 +595,14 @@ export default function Home() {
                 Connect with us
               </p>
               <ConnectWithUs className="flex items-center gap-2" />
-              <ConnectWithUs className="flex items-center gap-2" property1="Facebook" />
-              <ConnectWithUs className="flex items-center gap-2" property1="instagram" />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="Facebook"
+              />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="instagram"
+              />
             </div>
 
             {/* Explore */}
@@ -553,11 +610,26 @@ export default function Home() {
               <p className="font-['Inter',sans-serif] text-[24px] font-semibold text-white tracking-[0.036px]">
                 Explore
               </p>
-              <ConnectWithUs className="flex items-center gap-2" property1="Pre-Publication" />
-              <ConnectWithUs className="flex items-center gap-2" property1="Archives" />
-              <ConnectWithUs className="flex items-center gap-2" property1="Bulletin" />
-              <ConnectWithUs className="flex items-center gap-2" property1="Catalogue" />
-              <ConnectWithUs className="flex items-center gap-2" property1="Feedback" />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="Pre-Publication"
+              />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="Archives"
+              />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="Bulletin"
+              />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="Catalogue"
+              />
+              <ConnectWithUs
+                className="flex items-center gap-2"
+                property1="Feedback"
+              />
               <ConnectWithUs
                 className="flex items-center gap-2"
                 property1="Return & Refund Policy"
@@ -596,7 +668,11 @@ export default function Home() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="relative size-[24px]">
-                  <img alt="" className="block size-full max-w-none" src={imgEntypoOldPhone} />
+                  <img
+                    alt=""
+                    className="block size-full max-w-none"
+                    src={imgEntypoOldPhone}
+                  />
                 </div>
                 <div className="flex flex-col gap-2 font-['Inter',sans-serif] text-[14px] font-medium leading-6 tracking-[0.021px] text-white whitespace-pre-wrap w-[102px]">
                   <p>0481- 2301812</p>
@@ -605,7 +681,11 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="relative size-[24px]">
-                  <img alt="" className="block size-full max-w-none" src={imgIcomoonFreeMobile} />
+                  <img
+                    alt=""
+                    className="block size-full max-w-none"
+                    src={imgIcomoonFreeMobile}
+                  />
                 </div>
                 <p className="font-['Inter',sans-serif] text-[14px] font-medium leading-6 tracking-[0.021px] text-white">
                   +919048397101
@@ -622,7 +702,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-

@@ -1,4 +1,3 @@
-
 // app/page.js
 import Header from "@/components/home/Header";
 import Hero from "@/components/home/Hero";
@@ -15,27 +14,21 @@ import Section from "@/components/home/Section";
 export default function Home() {
   return (
     <div className=" max-w-[1900px] mx-auto bg-[#f8fbf1]">
-      <Navbar/>
-              <Hero />
+      <Navbar />
+      <Hero />
 
       <div className=" w-full h-full  bg-white pb-[50px] px-4 md:px-[40px] xl:px-[72px]  ">
-
         {/* <Header /> */}
 
-
-
-     <Section/>
+        <Section />
 
         <Gallery />
 
         <Souvenirs />
 
         <PlanVisit />
-
-
       </div>
-        <Footer />
-
+      <Footer />
     </div>
   );
 }

@@ -8,7 +8,9 @@ function page() {
       <Navbar />
       <div className="mt-16 sm:mt-28 lg:mt-40 lg:flex  w-full gap-14 2xl:gap-20 relative z-20 px-5 sm:px-7 md:px-[40px] xl:px-[72px] pt-10 sm:pt-[20px] pb-[60px]">
         <div className="lg:w-[50%] xl:w-[55%] 2xl:w-[50%]">
-          <h3 className="font-semibold text-black text-[18px] sm:text-[22px] lg:text-[20px] xl:text-[24px] ">FEEDBACK</h3>
+          <h3 className="font-semibold text-black text-[18px] sm:text-[22px] lg:text-[20px] xl:text-[24px] ">
+            FEEDBACK
+          </h3>
           <h1 className="text-[#43483F] text-[30px] sm:text-[40px] md:text-[42px] lg:text-[38px] xl:text-[50px] lg:leading-loose mt-[30px] xl:mt-[40px] font-bold">
             “Help us grow better — one feedback at a time.”
           </h1>
@@ -43,7 +45,7 @@ function page() {
                 placeholder="Phone Number(optional)"
                 className="w-full outline-none placeholder-black text-black text-[16px] sm:text-[18px] lg:text-[16px] xl:text-[20px]"
               />
-            </div>            
+            </div>
             <div className="border border-[#C3C8BC] px-4 py-3 rounded-lg mt-[30px]">
               <input
                 type="email"
@@ -58,8 +60,9 @@ function page() {
                 className="w-full outline-none placeholder-black text-black text-[16px] sm:text-[18px] lg:text-[16px] xl:text-[20px] h-[150px] xl:h-[200px]"
               />
             </div>
-<button className="w-full border bg-[#1E4D50] text-white px-4 py-4 rounded-lg mt-[50px] xl:mt-[70px] text-[14px] font-medium">SEND</button>
-
+            <button className="w-full border bg-[#1E4D50] text-white px-4 py-4 rounded-lg mt-[50px] xl:mt-[70px] text-[14px] font-medium">
+              SEND
+            </button>
           </form>
         </div>
       </div>

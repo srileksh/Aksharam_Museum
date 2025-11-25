@@ -46,9 +46,6 @@ function formatDate(dateString) {
   });
 }
 
-
-
-
 // ───────── CARD ─────────
 
 function ExhibitionCard({ exhibition, index }) {
@@ -64,8 +61,8 @@ function ExhibitionCard({ exhibition, index }) {
     exhibition.status === "upcoming"
       ? "Upcoming"
       : exhibition.status === "past"
-        ? "Closed"
-        : "In Progress";
+      ? "Closed"
+      : "In Progress";
 
   return (
     <Link href={href} className="flex flex-col group cursor-pointer">
@@ -166,9 +163,7 @@ export default function ExhibitionsPage() {
         )}
 
         {!loading && error && (
-          <p className="text-[12px] leading-[18px] text-[#E14242]">
-            {error}
-          </p>
+          <p className="text-[12px] leading-[18px] text-[#E14242]">{error}</p>
         )}
 
         {!loading && !error && exhibitions.length === 0 && (
@@ -180,7 +175,11 @@ export default function ExhibitionsPage() {
         {!loading && !error && exhibitions.length > 0 && (
           <section className="grid grid-cols-1 gap-y-20 gap-x-12 md:grid-cols-2">
             {exhibitions.map((ex, index) => (
-              <ExhibitionCard key={ex._id || index} exhibition={ex} index={index} />
+              <ExhibitionCard
+                key={ex._id || index}
+                exhibition={ex}
+                index={index}
+              />
             ))}
           </section>
         )}

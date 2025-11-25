@@ -1,8 +1,5 @@
 // components/Header.jsx
-import {
-  imgAksharamLogo8X8Cm1,
-  imgIonTicket
-} from "@/lib/assets";
+import { imgAksharamLogo8X8Cm1, imgIonTicket } from "@/lib/assets";
 
 export default function Header() {
   return (
@@ -24,7 +21,7 @@ export default function Header() {
               "EXHIBITIONS & EVENTS",
               "GALLERY",
               "ABOUT US",
-              "FEEDBACK"
+              "FEEDBACK",
             ].map((item) => (
               <div key={item} className="px-4 py-2">
                 <p className="font-['Inter'] text-[14px] font-semibold">

@@ -52,47 +52,9 @@ function EventCard({ event }) {
   const href = `/exhibitions/${event.slug || event._id}`;
 
   return (
-    // <Link
-    //   href={href}
-    //   className="flex items-center gap-2 border-b border-[#c3c8bc] px-0 py-3 last:border-b-0"
-    // >
-    //   <div className="relative h-[99px] w-[177px] shrink-0 overflow-hidden rounded-[4px] bg-[#d9d9d9]">
-    //     {image && (
-    //       <img
-    //         alt={event.title || "Exhibition image"}
-    //         className="absolute inset-0 h-full w-full rounded-[4px] object-cover"
-    //         src={image.startsWith("http") ? image : `${CMS_API_BASE}${image}`}
-    //       />
-    //     )}
-    //   </div>
-
-    //   <div className="flex w-[250px] flex-col gap-2">
-    //     <p className="font-['Inter',sans-serif] text-[16px] font-semibold text-[#43483f]">
-    //       {event.title || "Event name"}
-    //     </p>
-
-    //     <div className="flex items-center gap-1">
-    //       <div className="relative h-4 w-4">
-    //         <img
-    //           alt=""
-    //           className="block h-full w-full"
-    //           src={imgClarityDateSolid}
-    //         />
-    //       </div>
-    //       <p className="font-['Inter',sans-serif] text-[12px] text-[#73796e]">
-    //         {dateLabel}
-    //       </p>
-    //     </div>
-
-    //     <p className="font-['Inter',sans-serif] text-[12px] text-[#73796e] line-clamp-3">
-    //       {description}
-    //     </p>
-    //   </div>
-    // </Link>
-
     <Link
-  href={href}
-  className="
+      href={href}
+      className="
     flex flex-col sm:flex-row         /* stack on mobile, row on sm+ */
     items-start sm:items-center
     gap-3 sm:gap-4
@@ -100,47 +62,50 @@ function EventCard({ event }) {
     py-3
     last:border-b-0
   "
->
-  {/* IMAGE */}
-  <div
-    className="
+    >
+      {/* IMAGE */}
+      <div
+        className="
       relative
       w-full sm:w-[177px]
       h-[160px] sm:h-[99px]          /* taller on mobile */
       shrink-0
       overflow-hidden rounded-[4px] bg-[#d9d9d9]
     "
-  >
-    {image && (
-      <img
-        alt={event.title || 'Exhibition image'}
-        className="absolute inset-0 h-full w-full object-cover rounded-[4px]"
-        src={image.startsWith('http') ? image : `${CMS_API_BASE}${image}`}
-      />
-    )}
-  </div>
-
-  {/* TEXT */}
-  <div className="flex w-full sm:w-[250px] flex-col gap-2">
-    <p className="font-['Inter',sans-serif] text-[16px] sm:text-[16px] text-[15px] font-semibold text-[#43483f]">
-      {event.title || 'Event name'}
-    </p>
-
-    <div className="flex items-center gap-1">
-      <div className="relative h-4 w-4">
-        <img alt="" className="block h-full w-full" src={imgClarityDateSolid} />
+      >
+        {image && (
+          <img
+            alt={event.title || "Exhibition image"}
+            className="absolute inset-0 h-full w-full object-cover rounded-[4px]"
+            src={image.startsWith("http") ? image : `${CMS_API_BASE}${image}`}
+          />
+        )}
       </div>
-      <p className="font-['Inter',sans-serif] text-[12px] sm:text-[12px] text-[11px] text-[#73796e]">
-        {dateLabel}
-      </p>
-    </div>
 
-    <p className="font-['Inter',sans-serif] text-[12px] sm:text-[12px] text-[11px] text-[#73796e] line-clamp-3">
-      {description}
-    </p>
-  </div>
-</Link>
+      {/* TEXT */}
+      <div className="flex w-full sm:w-[250px] flex-col gap-2">
+        <p className="font-['Inter',sans-serif] text-[16px] sm:text-[16px] text-[15px] font-semibold text-[#43483f]">
+          {event.title || "Event name"}
+        </p>
 
+        <div className="flex items-center gap-1">
+          <div className="relative h-4 w-4">
+            <img
+              alt=""
+              className="block h-full w-full"
+              src={imgClarityDateSolid}
+            />
+          </div>
+          <p className="font-['Inter',sans-serif] text-[12px] sm:text-[12px] text-[11px] text-[#73796e]">
+            {dateLabel}
+          </p>
+        </div>
+
+        <p className="font-['Inter',sans-serif] text-[12px] sm:text-[12px] text-[11px] text-[#73796e] line-clamp-3">
+          {description}
+        </p>
+      </div>
+    </Link>
   );
 }
 
