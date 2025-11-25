@@ -118,7 +118,7 @@ export default function Hero() {
 
   {/* Background Image */}
   <img
-    src={imgImg202507271809472}
+    src="/home.png"
     className="w-full h-full object-cover absolute inset-0"
     alt="Hero Background"
   />

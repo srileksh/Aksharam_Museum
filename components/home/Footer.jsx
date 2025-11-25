@@ -81,13 +81,18 @@
 
 
 
-import {
-  imgMaterialSymbolsLightMail,
-  imgEntypoOldPhone,
-  imgIcomoonFreeMobile
-} from "@/lib/assets";
+// import {
+//   imgMaterialSymbolsLightMail,
+//   imgEntypoOldPhone,
+//   imgIcomoonFreeMobile
+// } from "@/lib/assets";
 
 import ConnectWithUs from "./ConnectWithUs";
+import { GiRotaryPhone } from "react-icons/gi";
+import { IoMail } from "react-icons/io5";
+
+import { FaMobileScreenButton } from "react-icons/fa6";
+
 
 export default function Footer() {
   return (
@@ -143,14 +148,15 @@ export default function Footer() {
           <p>Kottayam - 686001.</p>
 
           {/* Email */}
-          <div className="flex items-center gap-2 mt-4">
-            <img src={imgMaterialSymbolsLightMail} className="w-6 h-6" />
+          <div className="flex items-start  gap-2 mt-4">
+            <p className="text-2xl"><IoMail /></p>
+ 
             <p>spcsktm@gmail.com</p>
           </div>
 
           {/* Phone */}
           <div className="flex items-start gap-2 mt-2">
-            <img src={imgEntypoOldPhone} className="w-6 h-6" />
+            <p className=" text-2xl"><GiRotaryPhone/></p>
             <div>
               <p>0481-2301812</p>
               <p>0481-2564111</p>
@@ -158,8 +164,8 @@ export default function Footer() {
           </div>
 
           {/* Mobile */}
-          <div className="flex items-center gap-2 mt-2">
-            <img src={imgIcomoonFreeMobile} className="w-6 h-6" />
+          <div className="flex  items-center gap-2 mt-2">
+            <p className="text-2xl"><FaMobileScreenButton /></p> 
             <p>+919048397101</p>
           </div>
         </div>

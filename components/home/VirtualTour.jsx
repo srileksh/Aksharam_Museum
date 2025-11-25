@@ -37,7 +37,7 @@ export default function VirtualTour() {
 <div
   className="relative h-[280px] sm:h-[450px] 2xl:h-[528px] rounded-[16px] overflow-clip bg-[#828282] bg-cover bg-center"
   style={{
-    backgroundImage: `url(${imgImg202509301106451})`,
+    backgroundImage: 'url("/virtual.png")',
   }}
 >
   {/* Dark overlay — give it z-10 */}
