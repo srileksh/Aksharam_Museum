@@ -8,7 +8,7 @@ import Navbar from "@/components/home/Navbar";
 import Footer from "@/components/home/Footer";
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_CMS_API_BASE || "http://localhost:5000";
+  process.env.NEXT_PUBLIC_API_BASE_URL;
 
 // Helper to build full image URL
 function buildImageUrl(url) {

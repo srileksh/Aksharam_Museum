@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname(); // ✅ Current route
 
   const navItems = [
-    { name: "HOME", path: "/home" },
+    { name: "HOME", path: "/" },
     { name: "SOVENIER SHOP", path: "" },
     { name: "EXHIBITIONS & EVENTS", path: "/exhibitions" },
     { name: "GALLERY", path: "/gallery" },

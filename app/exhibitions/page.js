@@ -19,7 +19,7 @@ const FALLBACK_IMAGE_RIGHT =
 
 // Build image URL from /uploads path
 const FILE_BASE =
-  process.env.NEXT_PUBLIC_CMS_FILE_BASE ||
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
   // strip /api/public if using same origin
   (process.env.NEXT_PUBLIC_CMS_API_BASE
     ? process.env.NEXT_PUBLIC_CMS_API_BASE.replace(/\/api\/public$/, "")
@@ -147,7 +147,7 @@ export default function ExhibitionsPage() {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      <main className="mx-auto max-w-[1150px] px-8 pt-12 pb-24">
+      <main className="mx-auto max-w-[1150px] px-8 pt-20 pb-24">
         {/* Page title */}
         <header className="mb-10">
           <h1 className="font-serif text-[14px] leading-[18px] font-semibold tracking-[0.15em] uppercase text-[#222222]">

@@ -54,7 +54,7 @@ export default function Souvenirs() {
                 className="
               h-[200px] sm:h-[240px] lg:h-[280px] xl:h-[296px]
               w-full xl:w-[223px]
-              border rounded-[8px] overflow-hidden
+              border-1 border-black/50 rounded-[8px] overflow-hidden
             "
               >
                 <img src={img} className="w-full h-full object-cover" alt="" />

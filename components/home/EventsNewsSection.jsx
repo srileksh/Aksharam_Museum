@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { apiGet } from "../../lib/api"; // adjust to "@/lib/api" if you use alias
+import { apiGet } from "../../lib/api"; 
+import { BiSolidCalendar } from "react-icons/bi";
+
 
 const CMS_API_BASE =
   process.env.NEXT_PUBLIC_CMS_API_BASE ||
@@ -90,11 +92,7 @@ function EventCard({ event }) {
 
         <div className="flex items-center gap-1">
           <div className="relative h-4 w-4">
-            <img
-              alt=""
-              className="block h-full w-full"
-              src={imgClarityDateSolid}
-            />
+           <BiSolidCalendar className="text-[#73796e]"/>
           </div>
           <p className="font-['Inter',sans-serif] text-[12px] sm:text-[12px] text-[11px] text-[#73796e]">
             {dateLabel}
